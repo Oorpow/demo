@@ -73,6 +73,18 @@ Js特点
     * 若有非数，则为NaN
     * 若是空串，或为空格，则为0
     * true -> 1，false -> 0，null -> 0，undefined -> NaN  
+  * Plan B：parseInt()
+    * 将串中有效的整数取出，转为Number，如 a = parseInt(a);
+  * Plan C：parseFloat()
+    * 操作与parseInt相同，不仅能获取整数，还能获取小数
+  * 若对非String使用parseInt，parseFloat，会将其先转为String，后再进行判断，如
+    * a = true; a = parseInt(a); console.log(typeof a); // Number console.log(a); // NaN
+
+* 其它转Boolean
+  * 数字->Bool，除0，NaN外，均为true
+  * 字符串->Bool，除空串外，均为true
+  * Null,Undefined->Bool，为false
+  * Object->Bool,true 
 
 
   
