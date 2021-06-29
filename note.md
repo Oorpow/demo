@@ -67,6 +67,13 @@ Js特点
     * 对于Number，Boolean来说，调用String()，实际相当于调用toString()
     * 对于Null,Undefined，则会转为"Null"，"Undefined"
 
+* 其它转Number
+  * Plan A：调用Number()，即 a = Number(a);
+    * 若字符串是纯数字，则会转为数字
+    * 若有非数，则为NaN
+    * 若是空串，或为空格，则为0
+    * true -> 1，false -> 0，null -> 0，undefined -> NaN  
+
 
   
 
