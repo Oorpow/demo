@@ -81,10 +81,32 @@ Js特点
     * a = true; a = parseInt(a); console.log(typeof a); // Number console.log(a); // NaN
 
 * 其它转Boolean
-  * 数字->Bool，除0，NaN外，均为true
-  * 字符串->Bool，除空串外，均为true
-  * Null,Undefined->Bool，为false
-  * Object->Bool,true 
+  * 数字 -> Bool，除0，NaN外，均为true
+  * 字符串 -> Bool，除空串外，均为true
+  * Null,Undefined -> Bool，为false
+  * Object -> Bool,true 
+
+对象
+---
+* 基本数据类型都是单一的值，值与值之间没有联系
+* 对象作为复合的数据类型，对象可保存多个不同数据类型的属性
+  * 内建对象
+    * 由ES标准中定义的对象，在任何ES中均可使用，如Math，String...
+  * 宿主对象
+    * 由js的运行环境提供的对象，主要是浏览器提供，如DOM,BOM
+  * 自定义对象
+    * 由开发人员自行创建
+
+* 对象的创建
+  * 用new调用的函数，是构造函数constructor
+  * 构造函数，专门用于创建对象
+
+* 属性
+  * 对象中保存的值，即属性
+  * 属性的添加/修改：对象.属性名 = 属性值
+  * 属性的读取：对象.属性名
+    * 若读取的属性不存在，不会报错，而会返回undefined
+  * 属性的删除：delete 对象.属性名
 
 
   
