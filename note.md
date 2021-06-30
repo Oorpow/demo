@@ -195,6 +195,16 @@ this的指向
 * 调用方法与普通函数不同，使用new调用
 * 执行流程：
   * 创建一个新对象 
+  * 将新建的对象，设置为函数中的this
+  * 逐步执行函数中的代码
+  * 将新建的对象作为返回值返回
+  * function Person(name,age){this.name = name, this.age = age}   var man = new Person("Wow",16);
+* 使用同一构造函数创建的对象，称为一类对象，也将一个构造函数成为一个类
+* 通过一个构造函数创建的对象，成为该类的实例，如201行的man，称man是Person类的一个实例
+* 检查一个对象是否是一个类的实例的方法：
+  * 对象 instanceof 类，man instanceof Person;
+* 
+
 
 
    
