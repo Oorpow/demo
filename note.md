@@ -311,6 +311,51 @@ this的指向
   * arr = [1,2];
   * var result = arr.splice(0,1,"z");
 
+数组去重
+---
+* var arr = [1,2,2,33,33,4];
+* for(var i = 0;i < arr.length; i ++){
+* //遍历第i位后的数据
+*  for(var j = i + 1; j < arr.length; j ++){
+*   if(arr[i] == arr[j]){
+*     arr.splice(j,1);
+*     j--;
+*   }
+*  }
+* }
+
+连接多个数组
+---
+* concat()
+* 链接多个数组，并将新的数组返回，不影响原数组
+* var result = arr.concat(数组1，数组2);
+
+将数组转为一个字符串
+---
+* join()
+* 将数组转为一个字符串，并将转换后的字符串作为结果返回，不影响原数组
+* 数组.join("连接符"); // 连接符默认为逗号
+
+反转数组
+---
+* reverse()
+* 反转数组，且会修改原数组
+
+排序
+---
+* sort()
+* 排序，会影响原数组，默认按unicode编码排序，因此，数字也会按照unicode排序，所以可能出错
+* 也可自定排序规则，通过添加一个回调函数，如：
+* arr.sort(function(a,b)){
+*  return 0;  // 不变
+*  return 1;  // 交换
+*  return -1; // 不变
+* }
+* 或者return a - b;  // 升序
+* return b - a;      // 降序
+
+
+
 
 
 
