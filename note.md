@@ -547,7 +547,40 @@ BOM
   * 浏览器的历史记录
   * 由于隐私限制，无法获取到具体的历史记录，因此只能操作浏览器进行翻页功能，且仅在当次访问时有效
 * Screen
-  * 用户的显示器参数信息 
+  * 用户的显示器参数信息
+
+JSON：JavaScript Object Notation
+---
+* JSON是特殊格式的字符串
+ * 可以被任何语言识别，且可转为任何语言中的对象
+ * 开发中，用于数据交互
+ * json与js对象格式一致，但属性名必须加引号
+* JSON分类
+  * 对象：'{"age":126}'
+  * 数组："[1,3,3]"
+* 将json字符串转为对象
+  * JSON.parse()
+  * var msg = '{"age":16}'; var newMsg = JSON.parse(msg);
+* js对象转json字符串
+  * JSON.stringify() 
+
+
+常见问题
+---
+* typeof：
+  * 可判断undefined,number,string,boolean,function
+  * 无法判断null与object，array与object
+* instanceof
+  * 判断对象的具体类型
+* ===
+  * 可以判断undefined,null
+* undefined与null的区别？
+  * undefined表定义了但未赋值
+  * null表定义了且赋值为null
+* 何时为变量赋值为null？
+  * 初始赋值，表明将要赋值为对象
+  * 结束前， 使对象变成垃圾对象被回收
+
 
 
 
