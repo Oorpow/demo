@@ -30,5 +30,8 @@ prototype
 * 隐式原型
     * 每个实例对象都有一个_ _ proto _ _ 属性，即隐式原型属性
 * 对象的隐式原型的值与气对应构造函数的显示原型的值相等！
-*  
+* speical
+    * 函数的prototype属性，指向的对象，默认为空的Object实例对象
+    * 所有函数都是Function的实例(包括Function)
+    *   
 
