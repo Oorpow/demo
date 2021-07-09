@@ -24,14 +24,15 @@ prototype
 * 每个函数都有一个prototype属性，默认指向一个空的Object对象，即原型对象
 * 原型对象中有一个属性constructor指向函数对象
 * 给原型对象添加属性的作用：
-    * 函数的所有实例对象，自动拥有原型中的属性(方法)
+   * 函数的所有实例对象，自动拥有原型中的属性(方法)
 * 显示原型
-    * 每个函数都有一个prototype属性，即显示原型属性
+   * 每个函数都有一个prototype属性，即显示原型属性
 * 隐式原型
-    * 每个实例对象都有一个_ _ proto _ _ 属性，即隐式原型属性
+   * 每个实例对象都有一个_ _ proto _ _ 属性，即隐式原型属性
 * 对象的隐式原型的值与气对应构造函数的显示原型的值相等！
 * speical
-    * 函数的prototype属性，指向的对象，默认为空的Object实例对象
-    * 所有函数都是Function的实例(包括Function)
-    *   
+   * 函数的prototype属性，指向的对象，默认为空的Object实例对象
+   * 所有函数都是Function的实例(包括Function)
+   * Object的原型对象是原型链的尽头
+      * Object.prototype.__proto__; // null   
 
